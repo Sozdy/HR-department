@@ -1,0 +1,108 @@
+.banner-container
+    position relative
+
+    .banner
+        width 100%
+        min-height 103px
+        object-fit cover
+
+    .overlay
+        position absolute
+        height 100%
+        width 12.4vw
+        max-width 230px
+        min-width 125px
+        left 50%
+        top 0
+        transform  translateX(-50%)
+        background url("/img/banner_overlay.jpg") center no-repeat
+        background-size cover
+
+        @media (max-width 991px)
+            min-width 170px
+            min-height 80px
+
+.news-container
+    background white
+    padding 30px 0
+    margin-bottom: -30px;
+
+.background
+    background-color #F5F5F5
+    padding 15px 0 15px 0
+
+    .block
+        margin 15px 0
+        font-weight bold
+        font-size 1rem
+        line-height 30px
+        transition .3s
+
+        &:hover
+            transform scale(1.03)
+
+        @media (max-width 767px)
+            margin 7.5px 0
+
+        .link
+            display block
+            width 100%
+            height 100%
+            padding 20px 15px 40% 25px
+            color #FFFFFF
+
+            @media (max-width 767px)
+                padding 20px 15px 20px 25px
+
+        &:nth-child(1)
+            .link
+                background #57e58c url("/img/buttons/main_page/vacancies_btn.jpg") center
+                background-size cover
+
+        &:nth-child(2)
+            .link
+                background #5c57e5 url("/img/buttons/main_page/competition_btn.jpg") center
+                background-size cover
+
+        &:nth-child(3)
+            .link
+                background #e5b157 url("/img/buttons/main_page/practice_btn.jpg") center
+                background-size cover
+
+        &:nth-child(4)
+            .link
+                background #8957e5 url("/img/buttons/main_page/education_btn.jpg") center
+                background-size cover
+
+        &:nth-child(5)
+            .link
+                background #e57357 url("/img/buttons/main_page/reserve_btn.jpg") center
+                background-size cover
+
+        &:nth-child(6)
+            .link
+                background #e23f8b url("/img/buttons/main_page/news_btn.jpg") center
+                background-size cover
+
+
+
+
+//news-block styles
+
+.all_news_btn
+    background-color #854957
+    display flex
+    justify-content space-between
+    padding 15px
+    height 100%
+    align-items center
+    transition 0.3s
+    cursor pointer
+
+    &:hover
+        transform scale(1.02)
+        box-shadow 0px 2px 2px rgba(0, 0, 0, 0.1)
+
+    .btn_text
+        margin 0
+

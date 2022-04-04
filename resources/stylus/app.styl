@@ -1,0 +1,85 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import 'layouts'
+@import 'main_page'
+@import 'components'
+@import 'news_page'
+@import 'vacancies_page'
+@import 'form'
+
+body
+    min-height 100vh
+    font-family 'Montserrat', sans-serif!important
+    background #f2f2f2
+    scroll-behavior smooth
+
+#app
+    display flex
+    flex-direction column
+    min-height 100%
+
+a
+    color #333333
+    text-decoration none
+
+    &:hover
+        color #333333
+        text-decoration none
+
+    &.white
+        color white
+
+.active_link
+    color #0A7FC1
+
+    .show
+        display none
+
+    .hide
+        display block
+
+    &.collapsed
+        .show
+            display block
+
+        .hide
+            display none
+
+
+    &:hover
+        font-weight 600
+
+
+.layout-navbar
+    z-index 1
+
+.layout-content
+    flex 1 0 auto
+
+.title-bg
+    background gray url("/img/title_bg.jpg") center
+    background-size cover
+    display flex
+    justify-content center
+
+    .text
+        display inline-block
+        background white
+        padding 15px
+        margin 40px
+
+.map
+    iframe
+        height auto
+        width 100%
+        min-height 300px
+
+        @media (max-width 600px)
+            pointer-events none
+
+
+
+.no-padding
+    @media (min-width 576px)
+        margin: auto -30px
